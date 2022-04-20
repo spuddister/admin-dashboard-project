@@ -25,7 +25,7 @@ body {
     background-color: #1992d4;
     font-size: 22px;
     font-weight: 700;
-    padding: 20px;
+    padding: 20px 15px 0 0;
     display: grid;
     grid-template: 80px repeat(5, 25px) 60px repeat(3, 25px) / 1fr 2fr;
     gap: 1em 0.25em;
@@ -55,11 +55,55 @@ header {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
     background-color: white;
+    display: grid;
+    grid-template: 50% 50% / 50px 1fr repeat(2, 50px) 100px;
+}
+
+.header-button {
+    background-color: white;
+    border: 1px red solid;
+}
+
+.header-button:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+.profile-button {
+    grid-column: 4 / -1;
+}
+
+.user-img1 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.welcome-message { 
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.button-grid{
+    grid-column: 3 / -1;
+    grid-row: 2 / 3;
 }
 
 .content {
     grid-column: 2 / 3;
     grid-row: 2 / -1;
+}
+
+.project-card-grid {
+    display: grid;
+    gap: 4px;
+    padding: 4px;
+    border: 1px solid grey;
+    background-color: skyblue;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.project-card {
+ 
 }
 
 .info-bar {

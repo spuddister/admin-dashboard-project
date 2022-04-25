@@ -15,7 +15,7 @@ body {
 .grid-container {
     flex: 1;
     display: grid;
-    grid-template: 1fr 5fr / minmax(260px, 340px) 6fr 2fr;
+    grid-template: 1.2fr 5fr / minmax(260px, 340px) 6fr 2fr;
 }
 
 .sidebar-grid {
@@ -56,35 +56,130 @@ header {
     grid-row: 1 / 2;
     background-color: white;
     display: grid;
-    grid-template: 50% 50% / 50px 1fr repeat(2, 50px) 100px;
+    grid-template: 40% 60% / 2fr 1fr;
+    padding: 0 30px;
 }
 
-.header-button {
+.search-button, .notification-button {
     background-color: white;
-    border: 1px red solid;
+    border: none;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    align-self: center;
 }
 
 .header-button:hover {
     background-color: rgb(221, 221, 221);
 }
 
+.search-bar {
+    height: 40px;
+    align-self: center;
+    border-radius: 20px;
+    padding: 0 20px;
+    max-width: 700px;
+    margin: 0 15px;
+    border: none;
+    background-color: #dddddd;
+    flex: 1;
+}
+
+.search-bar:active {
+    border: none;
+}
+
+.header-top-left-wrapper {
+    grid-column: 1 / 2;
+    display: flex;
+}
+
+.header-top-right-wrapper {
+    grid-column: 2 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-bottom-left-wrapper {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+}
+
+.header-bottom-right-wrapper {
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
 .profile-button {
-    grid-column: 4 / -1;
+    margin-left: 15px;
+    border-radius: 25px;
+    display: flex;
+    height: 50px;
+    background-color: white;
+    border: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+.profile-name {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin: 0 15px 0 20px;
+}
+
+.profile-button img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.main-profile-pic {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
 }
 
 .user-img1 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    display: flex;
+    align-items: center;
 }
 
-.welcome-message { 
+.message-wrapper { 
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    align-self: center;
+    font-weight: 700;
+    font-size: 24px;
+    margin-left: 20px;
 }
 
-.button-grid{
-    grid-column: 3 / -1;
-    grid-row: 2 / 3;
+.message {
+    font-size: 14px;
+}
+
+.interact-button {
+    padding: 5px 20px;
+    background-color: #1992d4;
+    color: white;
+    font-weight: 700;
+    border-radius: 20px;
+    height: 40px;
+    width: 90px;
+    font-size: 14px;
+    border: none;
+}
+
+.interact-button:hover {
+    background-color: #0f6a9b;
 }
 
 .content {

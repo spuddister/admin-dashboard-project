@@ -211,6 +211,19 @@ h3 {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
+.project-card a {
+    text-decoration: none;
+    color: rgb(92, 92, 92);
+    font-weight: 600;
+}
+
+.project-card-description {
+    color: rgb(92, 92, 92);
+    font-size: 15px;
+}
+
+
+
 .info-bar {
     grid-column: 3 / -1;
     grid-row: 2 / -1;

@@ -15,7 +15,7 @@ body {
 .grid-container {
     flex: 1;
     display: grid;
-    grid-template: 1.2fr 5fr / minmax(260px, 340px) 6fr 2fr;
+    grid-template: 1.1fr 5fr / minmax(260px, 310px) 6fr 2fr;
 }
 
 .sidebar-grid {
@@ -25,10 +25,10 @@ body {
     background-color: #1992d4;
     font-size: 22px;
     font-weight: 700;
-    padding: 20px 15px 0 0;
+    padding: 20px;
     display: grid;
-    grid-template: 80px repeat(5, 25px) 60px repeat(3, 25px) / 1fr 2fr;
-    gap: 1em 0.25em;
+    grid-template: 70px repeat(5, 25px) 60px repeat(3, 25px) / 70px 2fr;
+    gap: 1em 0;
 }
 
 .sidebar-grid img {
@@ -56,8 +56,9 @@ header {
     grid-row: 1 / 2;
     background-color: white;
     display: grid;
-    grid-template: 40% 60% / 2fr 1fr;
+    grid-template: 45% 55% / 2fr 1fr;
     padding: 0 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .search-button, .notification-button {
@@ -167,19 +168,24 @@ header {
 }
 
 .interact-button {
-    padding: 5px 20px;
+    padding: 5px 30px;
     background-color: #1992d4;
     color: white;
     font-weight: 700;
     border-radius: 20px;
     height: 40px;
-    width: 90px;
+    min-width: 110px;
     font-size: 14px;
     border: none;
+    justify-content: center;
 }
 
 .interact-button:hover {
     background-color: #0f6a9b;
+}
+
+h3 {
+    margin: 30px 0 10px 0;
 }
 
 .content {
@@ -191,7 +197,7 @@ header {
 
 .project-card-grid {
     display: grid;
-    gap: 10px;
+    gap: 25px;
     padding: 4px;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -202,25 +208,27 @@ header {
     border-radius: 10px;
     padding: 15px 10px;
     background-color: white;
-
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .info-bar {
     grid-column: 3 / -1;
     grid-row: 2 / -1;
-    display: grid;
-    grid-template: 65px 230px 65px 330px / minmax(200px, 1fr);
+    display: flex;
+    flex-direction: column;
     margin-right: 30px;
     margin-bottom: 30px;
 }
 
-.trending-contacts {
+
+.trending-card {
     display: grid;
     grid-template: repeat(4, 65px) / 1fr;
     background-color: white;
     border-radius: 10px;
     padding: 20px;
     gap: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .contact {
@@ -254,6 +262,35 @@ header {
 .contact>img:hover {
     transform: scale(1.1);
     transition: 200ms;
+}
+
+.announce-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-message-title {
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.info-message-title:not(:first-child) {
+    margin-top: 15px;
+}
+
+.info-message:not(:last-child) {
+    border-bottom: 1px solid rgba(92, 92, 92, 0.418);
+    padding-bottom: 15px;
+}
+
+.info-message {
+    margin: 0;
+    color: rgb(92, 92, 92);
+    font-size: 12px;
 }
 
 /* footer {

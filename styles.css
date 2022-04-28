@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
+:root {
+    --secondary-font-color: #3b3b3b;
+    --secondary-background-color: #dddddd;
+    --highlight-color: #1992d4;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -8,7 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgb(221, 221, 221);
+    background-color: var(--secondary-background-color);
     height: 100vh;
 }
 
@@ -22,7 +27,7 @@ body {
     grid-column: 1 / 2;
     grid-row: 1 / -1;
     color: white;
-    background-color: #1992d4;
+    background-color: var(--highlight-color);
     font-size: 22px;
     font-weight: 700;
     padding: 20px;
@@ -48,7 +53,7 @@ body {
     align-self: center;
 }
 .sidebar-item:hover {
-    color: black;
+    color: var(--secondary-font-color);
 }
 
 header {
@@ -71,7 +76,7 @@ header {
 }
 
 .header-button:hover {
-    background-color: rgb(221, 221, 221);
+    background-color: var(--secondary-background-color);
 }
 
 .search-bar {
@@ -82,7 +87,7 @@ header {
     max-width: 700px;
     margin: 0 15px;
     border: none;
-    background-color: #dddddd;
+    background-color: var(--secondary-background-color);
     flex: 1;
 }
 
@@ -169,7 +174,7 @@ header {
 
 .interact-button {
     padding: 5px 30px;
-    background-color: #1992d4;
+    background-color: var(--highlight-color);
     color: white;
     font-weight: 700;
     border-radius: 20px;
@@ -200,7 +205,7 @@ h3 {
     gap: 25px;
     padding: 4px;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .project-card {
@@ -211,18 +216,49 @@ h3 {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
+.project-card-title {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
 .project-card a {
     text-decoration: none;
-    color: rgb(92, 92, 92);
+    color: var(--secondary-font-color);
     font-weight: 600;
 }
 
 .project-card-description {
-    color: rgb(92, 92, 92);
+    color: var(--secondary-font-color);
     font-size: 15px;
+    margin: 0  0 20px 0;
 }
 
+.project-button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
 
+.project-button {
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    color: var(--secondary-font-color);
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-button:hover {
+    background-color: var(--secondary-background-color);
+    color: rgb(36, 36, 36);
+}
+
+.project-button a {
+    color: var(--highlight-color);
+}
 
 .info-bar {
     grid-column: 3 / -1;
@@ -236,7 +272,7 @@ h3 {
 
 .trending-card {
     display: grid;
-    grid-template: repeat(4, 65px) / 1fr;
+    grid-template: repeat(3, 65px) / 1fr;
     background-color: white;
     border-radius: 10px;
     padding: 20px;
@@ -252,7 +288,7 @@ h3 {
 
 .contact p {
     margin: 0;
-    color: rgb(92, 92, 92);
+    color: rgb(75, 75, 75);
 }
 
 .contact>p:first-of-type {
@@ -302,7 +338,7 @@ h3 {
 
 .info-message {
     margin: 0;
-    color: rgb(92, 92, 92);
+    color: var(--secondary-font-color);
     font-size: 12px;
 }
 

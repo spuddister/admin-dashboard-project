@@ -1,4 +1,4 @@
-# admin-dashboard-project
+# Admin Dashboard Project
 
 For this project from [The Odin Project](https://www.theodinproject.com/) Curriculum I built an admin daschboard using the CSS Grid layout.
 
@@ -13,6 +13,7 @@ For this project from [The Odin Project](https://www.theodinproject.com/) Curric
   
 #
 [See deployment here.](https://spuddister.github.io/admin-dashboard-project/)
+#
 
 ### Photo Credits
 

@@ -1,6 +1,6 @@
 # Admin Dashboard Project
 
-For this project from [The Odin Project](https://www.theodinproject.com/) Curriculum I built an admin dashboard using the CSS Grid layout.
+For this project from [The Odin Project](https://www.theodinproject.com/) Curriculum in the Intermediate HTML and CSS course, I built an admin dashboard using the CSS Grid layout.
 
 ### New Skills
 - Grid layout
